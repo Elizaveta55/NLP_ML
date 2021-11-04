@@ -16,3 +16,4 @@ The stracture:
 8. Folder "limited data storage" is a storage for 10% , 20%, ..., 90% and 100% of initial data. In order to experiment with limited data, these three files from ".data" should be replaced with other three files from any of "10" , "20", ..., "90" or "100" folder, representing the degree of limitation.
 9. Folder ".vector_cache" is for pretrained weights storage.
 
+[Colab for the first task](https://colab.research.google.com/drive/1FBqfTYR-EQR5z-b8oi52O77s8gXDr4hN?usp=sharing)
