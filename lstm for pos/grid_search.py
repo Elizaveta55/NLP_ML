@@ -116,11 +116,6 @@ def calculation_time(start_time, end_time):
     return mins, int(total_time - (mins * 60))
 
 
-# def init_weights(m):
-#     for name, param in m.named_parameters():
-#         nn.init.normal_(param.data, mean=0, std=0.1)
-
-
 TEXT = data.Field(lower = True)
 UD_TAGS = data.Field(unk_token = None)
 MIN_FREQ = 2
@@ -134,11 +129,6 @@ dropout = 0.25
 
 for data_limitation in data_limitations:
     print("Data limitation is ", data_limitation)
-    # print(train_data)
-    # train_data = datasets.sequence_tagging.UDPOS(train_data[0:round(len(train_data)*data_limitation)])
-    # print(train_data)
-    # # inxs = torch.randperm(len(train_data))[:round(len(train_data)*data_limitation)]
-    # # train_data = train_data[inxs]
     TEXT.build_vocab(train_data,
                      min_freq = MIN_FREQ,
                      vectors = "glove.6B.100d",
@@ -174,7 +164,6 @@ for data_limitation in data_limitations:
                              PAD_IDX)
 
 
-                # model.apply(init_weights)
                 pretrained_embeddings = TEXT.vocab.vectors
                 model.embedding.weight.data.copy_(pretrained_embeddings)
                 model.embedding.weight.data[PAD_IDX] = torch.zeros(embed_dim)
