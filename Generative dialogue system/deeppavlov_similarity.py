@@ -30,8 +30,8 @@ pairwise_sentences_eliza = [
     "вы пошел гулять"
 ]
 pairwise_sentences_seq2seq = [
-    "ы давайте наконец unk",
-    "Я пошел гулять"
+    "Я пошел гулять",
+    "ладно пойду спокойной"
 ]
 pairwise_sentences_rut5 = [
     "Я пошел гулять",
@@ -65,7 +65,7 @@ pairwise_sentences_eliza = [
 ]
 pairwise_sentences_seq2seq = [
     "Я чувствую обиду и злость за свой поступок",
-    "unk  unk у обвинения или больше unk unk unk с unk unk"
+    "я не люблю покушать а вообще люблю танцевать дома на работе"
 ]
 pairwise_sentences_rut5 = [
     "Я чувствую обиду и злость за свой поступок",
@@ -99,7 +99,7 @@ pairwise_sentences_eliza = [
 ]
 pairwise_sentences_seq2seq = [
     "Снег автомату рознь, а собака скользкая",
-    "unk приготовьтесь на минутку ли"
+    "у меня две собаки и трое детей а там уже кот"
 ]
 pairwise_sentences_rut5 = [
     "Снег автомату рознь, а собака скользкая",
@@ -133,7 +133,7 @@ pairwise_sentences_eliza = [
 ]
 pairwise_sentences_seq2seq = [
     "Скажи мне что-либо приятное",
-    "я unk со всеми дэнни но вы unk прямо без своей"
+    "оу интересно конечно но мне очень нравиться"
 ]
 pairwise_sentences_rut5 = [
     "Скажи мне что-либо приятное",
